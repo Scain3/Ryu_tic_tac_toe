@@ -1,26 +1,22 @@
 import React, {useState, useEffect} from 'react';
-import ReactDOM from "react-dom";
+import ReactDOM, { render } from "react-dom";
 
 function Data(){
-    const 
-}
 
-class Listing extends React{
-    constructor(props){
-        super(props)
-        this.state = {
-            records: []
-        }
-    }
-}
 
-componentDidMount(){
-    fetch('this is the url')
-        .then(response => response.json())
-        .then(records => {
-            this.setState({
-                records: records
-            })
+    useEffect(() => {
+        fetch('https://drive.google.com/file/d/1304_41h2fuJ96fOam6eowowOd65vihve/view?usp=sharing', {
+            method: "GET"
         })
-        .catch(error => console.log(error))
+        .then(res => res.json())
+        .then((data)=> {
+            console.log('data', data)
+        })
+        .catch(error => console.log(error));
+    })
+
+    
+
 }
+
+export default Data;

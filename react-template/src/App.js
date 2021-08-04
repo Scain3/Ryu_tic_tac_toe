@@ -1,8 +1,8 @@
-
+import Data from "./data/data";
 
 function App() {
   return (
-    <h1>Hello from App</h1>
+    <Data />
   );
 }
 
