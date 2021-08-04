@@ -25,4 +25,4 @@ const Data = (props) =>{
 
 }
 
-export default Data;
+ReactDOM.render(<ExampleComponent />, document.getElementById('app'));
