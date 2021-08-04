@@ -2,7 +2,7 @@ import Data from "./data/data";
 
 function App() {
   return (
-    <Data />
+    <h1>Hey, mon and dad I'm doing fine.</h1>
   );
 }
 

@@ -1,7 +1,8 @@
 import React, {useState, useEffect} from 'react';
 import ReactDOM, { render } from "react-dom";
 
-function Data(){
+const Data = (props) =>{
+    const [state, setState] = useState('');
 
 
     useEffect(() => {
@@ -11,11 +12,16 @@ function Data(){
         .then(res => res.json())
         .then((data)=> {
             console.log('data', data)
+
         })
         .catch(error => console.log(error));
     })
 
-    
+    return(
+        <div>
+            <h1>This is a function component view.</h1>
+        </div>
+    )
 
 }
 
